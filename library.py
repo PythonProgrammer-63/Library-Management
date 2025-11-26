@@ -35,9 +35,9 @@ class library:
         try:
             date = input("Enter date in format yyyy-mm-dd  or Enter 0 for taking automatically:")
             if date=='0':
-                date = datetime.today().strftime("%y-%m-%d")
+                date = datetime.today().strftime("%Y-%m-%d")
             else:
-                date = datetime.strptime(date ,'%Y-%m-%d').strftime("%y-%m-%d")
+                date = datetime.strptime(date ,'%Y-%m-%d').strftime("%Y-%m-%d")
         except:
             raise ValueError("Enter correct date")
         for n in range(0,len(self.bookslist)+1):
@@ -128,4 +128,5 @@ while(1):
             exit()
         case _:
             print("Enter valid Choice")
+
             
